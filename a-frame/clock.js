@@ -27,20 +27,20 @@ AFRAME.registerComponent("clock", {
     this.changeTimeZoneButton.setAttribute("radius", "1.6");
     this.el.appendChild(this.changeTimeZoneButton);
 
-    // List of time zones to cycle through
-    this.timeZones = ["Local", "London", "New York", "Tokyo"];
+    // list of time zones to cycle through
+    this.timeZones = ["Local", "London", "New York", "Tokyo", "Hawaii", "Korea"];
     this.currentIndex = 0;
 
     // Update time initially
     this.updateTime();
 
-    // Add click interaction to cycle through time zones
+    // click event listener for entire element
     this.el.addEventListener("click", () => {
       this.currentIndex = (this.currentIndex + 1) % this.timeZones.length;
       this.updateTime();
     });
 
-    // Update time every second
+    // updates the time every second
     this.interval = setInterval(() => this.updateTime(), 1000);
   },
 
@@ -50,11 +50,11 @@ AFRAME.registerComponent("clock", {
     let convertedTime = timeZone === "Local" ? now : convertTimeZone(now, timeZone);
     let displayString = `Time in ${timeZone}: ${displayTime(convertedTime)}`;
 
-    // Update text display
+    // updates the text display
     this.titleEl.setAttribute("value", displayString);
   },
 
   remove: function () {
-    clearInterval(this.interval); // Stop interval when the component is removed
+    clearInterval(this.interval);
   }
 });
