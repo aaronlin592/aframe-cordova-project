@@ -14,6 +14,13 @@
 
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
+https://aframe.io/
+https://aframe.io/docs/1.7.0/introduction/ - AFrame docs
+https://aframe.io/docs/1.7.0/introduction/installation.html#cordova-development - AFrame Cordova Development
+https://github.com/benallfree/cordova-aframe-showcase - Cordova AFrame Showcase for reference
+https://github.com/benallfree/cordova-plugin-xhr-local-file - Cordova XHR Local File Plugin
+https://cordova.apache.org/ 
+https://cordova.apache.org/docs/en/11.x/guide/cli/ - Development tutorial/guide
 
 
 
@@ -25,11 +32,13 @@ IDs: 83048320 and 38647888
 
 5. Is there anything special we need to know in order to run your code?
 To run the solution on the browser, simply cd into a-frame and run live-server.
+To run it on iPhone, we recommend the internet because a tutorial in the ReadMe would be too complex.
+Refer to our device demo to see it in action.
 
 
 6. Did you implement any extra credit options? If so, which ones?
 Yes, we implemented running the solution natively on the device A-Frame was designed for. 
 In this case, we didn't have access to a VR headset, so we used cordova to run the solution on Aaron's iPhone, 
 which was done via XCode and USB connection to an iPhone.
-See the demo in demo_device.mp4!
+Watch the demo in demo_device.mp4!
 
