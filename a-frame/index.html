@@ -4,15 +4,18 @@
     <meta charset="utf-8" />
     <title>Timezone converter - A-Frame</title>
     <meta name="description" content="Timeconverter-a-frame"/>
+
     <script src="https://cdn.jsdelivr.net/npm/spacetime@7.7.0/builds/spacetime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/spacetime-informal@0.6.1/builds/spacetime-informal.min.js"></script>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-    <script src="timezone.js"></script>
-    <script src="clock.js"></script>
+    <script src="cordova-app/www/timezone.js"></script>
+    <script src="cordova-app/www/clock.js"></script>
+
   </head>
   
   <body>
-    <a-scene cursor="rayOrigin: mouse">
+    <div id="scene-root"></div>
+    <a-scene id="my-scene" type="text/html" cursor="rayOrigin: mouse">
       <a-entity
         clock=""
         position="-2.75 2.5 -1.75"
