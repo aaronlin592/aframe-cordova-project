@@ -12,13 +12,23 @@ AFRAME.registerComponent("clock", {
 
     // tooltip/hint
     this.tooltip = document.createElement("a-text");
-    this.tooltip.setAttribute("position", { x: 2.4, y: -1, z: 0 });
+    this.tooltip.setAttribute("position", { x: 2.4, y: -0.9, z: 0 });
     this.tooltip.setAttribute("color", "#ff0000");
     this.tooltip.setAttribute("font", "sourcecodepro");
-    this.tooltip.setAttribute("value", "Press anywhere in the blue to change time zones!");
+    this.tooltip.setAttribute("value", "Press anywhere in the blue to cycle through time zones!");
     this.tooltip.setAttribute("scale", "0.5 0.5 0.5");
     this.tooltip.setAttribute("align", "center");
     this.el.appendChild(this.tooltip);
+
+    // time zone list
+    this.timelist = document.createElement("a-text");
+    this.timelist.setAttribute("position", { x: 2.4, y: -1.3, z: 0 });
+    this.timelist.setAttribute("color", "#ff0000");
+    this.timelist.setAttribute("font", "sourcecodepro");
+    this.timelist.setAttribute("value", "Available Time Zones: Local Time, London, New York, Tokyo, Hawaii, Korea");
+    this.timelist.setAttribute("scale", "0.4 0.4 0.4");
+    this.timelist.setAttribute("align", "center");
+    this.el.appendChild(this.timelist);
 
     // circle background
     this.changeTimeZoneButton = document.createElement("a-circle");
