@@ -2,15 +2,15 @@
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
+11/10
 - 1/1 The ability to display or speak the current local time
 - 3/3 The ability to convert the current local time to another time zone
 - 1/1 A demo video demonstrating these features
-- */5 Answers to questions about how the framework supports implementation
+- 5/5 Answers to questions about how the framework supports implementation
 - 1/0 Any extra credit options implemented
 
 2. How long, in hours, did it take you to complete this assignment?
-
+~18-24hrs
 
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
@@ -33,7 +33,8 @@ IDs: 83048320 and 38647888
 5. Is there anything special we need to know in order to run your code?
 To run the solution on the browser, simply cd into a-frame and run live-server.
 To run it on iPhone, we recommend the internet because a tutorial in the ReadMe would be too complex.
-Refer to our device demo to see it in action.
+Refer to demo_device.MP4 and demo_device_successfuliteration.MOV to see it in action.
+Also, the node_modules that we deleted for submission was originally in the cordova-app folder if you need the location to reinstall it for grading.
 
 
 6. Did you implement any extra credit options? If so, which ones?
